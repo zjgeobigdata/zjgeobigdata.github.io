@@ -6,7 +6,7 @@ module.exports = [
       {
         text: "脚手架",
         children: [
-          { text: "Vue-vite-script", link: "/document/vueViteScript/" },
+          { text: "vue-vite-script", link: "/document/vueViteScript/" },
         ],
       },
       {

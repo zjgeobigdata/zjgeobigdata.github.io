@@ -4,7 +4,7 @@ heroImage: 'http://www.zjgeobigdata.com/img/123.png'
 actionText: 快速上手 →
 actionLink: /zh/`guide/
 features:
-- title: Vue-vite-script
+- title: vue-vite-script
   details: 基于Vite二次封装的业务脚手架。
 - title: DZ-hooks
   details: Vue3 的实用Hooks集合。

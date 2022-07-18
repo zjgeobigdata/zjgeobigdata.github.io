@@ -15,4 +15,5 @@ module.exports = [
       },
     ],
   },
+  { text: "规范", link: "/document/rules/" },
 ];

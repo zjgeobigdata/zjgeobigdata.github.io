@@ -1,5 +1,6 @@
 ---
 home: true
+heroImage: 'http://www.zjgeobigdata.com/img/123.png'
 actionText: 快速上手 →
 actionLink: /zh/`guide/
 features:

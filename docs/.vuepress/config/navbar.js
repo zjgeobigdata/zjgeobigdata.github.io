@@ -11,7 +11,7 @@ module.exports = [
       },
       {
         text: "hooks",
-        children: [{ text: "dz-hooks", link: "/document/vueViteScript/" }],
+        children: [{ text: "dz-hooks", link: "/document/dzHooks/" }],
       },
     ],
   },

@@ -1,6 +1,11 @@
+const { path } = require("@vuepress/utils");
+const {
+  registerComponentsPlugin,
+} = require("@vuepress/plugin-register-components");
 const navbar = require("./config/navbar");
 const sidebar = require("./config/sidebar");
 const { defaultTheme } = require("vuepress");
+
 module.exports = {
   // 站点配置
   lang: "zh-CN",
@@ -20,4 +25,23 @@ module.exports = {
     navbar: navbar,
     sidebar: sidebar,
   }),
+  markdown: {
+    // options for markdown-it-anchor
+    anchor: { permalink: false, level: [1, 2] },
+
+    // options for markdown-it-toc
+    toc: { level: [1, 2] },
+
+    extractHeaders: { level: ["h2", "h3", "h4"] },
+
+    // disable line-numbers
+    code: { lineNumbers: false },
+  },
+  plugins: [
+    registerComponentsPlugin({
+      // 配置项
+      componentsDir: path.resolve(__dirname, "./components"),
+      dzHooksDir: path.resolve(__dirname, "./dzHooks"),
+    }),
+  ],
 };

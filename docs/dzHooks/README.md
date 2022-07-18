@@ -1,12 +1,6 @@
 <h1 align="center"><b>DZ-Hooks</b></h1>
 <h4 align="center">Vue3 的实用Hooks集合</h4>
 
-
-<h4  align="center">
-  DZ-Hooks是<a href="https://github.com/alibaba/hooks">ahooks</a>的Vue实现，绝大部分Api是保持一致的
-</h4>
-<br>
-
 ## 🏃文档
 <h4 align="center">
   <a href="https://zjgeobigdata.github.io/dzHooks/">使用文档</a>
@@ -17,7 +11,7 @@
 ## ⚡使用
 
 - **Async**
-  - `useRequest` — 一个完整的管理异步数据请求的Hook,<a href="https://ahooks.js.org/zh-CN/hooks/async">aHook useRequest</a>的Vue3实现，Api完全一致，如果你使用过aHook这将无缝衔接到Vue3.
+  - `useRequest` — 一个完整的管理异步数据请求的Hook
 - **Side**
   - `useDebounce` — 用于处理防抖值的 Hook.
   - `useDebounceFn` — 用于处理防抖函数的 Hook.

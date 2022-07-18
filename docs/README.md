@@ -9,6 +9,6 @@ features:
 - title: DZ-hooks
   details: Vue3 的实用Hooks集合。
 - title: DZ-element
-  details: 基于Element plus二次封装的业务脚手架
+  details: 基于Element plus二次封装的业务组件库
 footer: © 2022-present DZ-FRONTEND-GROUP
 ---

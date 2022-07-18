@@ -5,12 +5,20 @@ const {
 const navbar = require("./config/navbar");
 const sidebar = require("./config/sidebar");
 const { defaultTheme } = require("vuepress");
+const { viteBundler } = require("@vuepress/bundler-vite");
 
 module.exports = {
   // 站点配置
   lang: "zh-CN",
   title: "DZ-FRONTEND-LIB",
   description: "浙江地质大数据前端文档",
+  bundler: viteBundler({
+    viteOptions: {
+      ssr: {
+        noExternal: ["element-plus"],
+      },
+    },
+  }),
   head: [
     // 注入到当前页面的 HTML <head> 中的标签
     [

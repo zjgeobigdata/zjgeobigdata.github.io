@@ -8,5 +8,4 @@
     <el-button type="danger">Danger</el-button>
     <el-button>中文</el-button>
   </el-row>
-
 </template>

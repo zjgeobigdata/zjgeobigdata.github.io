@@ -10,8 +10,8 @@ module.exports = [
         ],
       },
       {
-        text: "hooks",
-        children: [{ text: "DZ-hooks", link: "/document/dzHooks/" }],
+        text: "Hooks",
+        children: [{ text: "DZ-hooks", link: "/dzHooks" }],
       },
     ],
   },

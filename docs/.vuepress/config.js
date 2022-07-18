@@ -1,4 +1,5 @@
 const navbar = require("./config/navbar");
+const sidebar = require("./config/sidebar");
 const { defaultTheme } = require("vuepress");
 module.exports = {
   // 站点配置
@@ -17,5 +18,6 @@ module.exports = {
   ],
   theme: defaultTheme({
     navbar: navbar,
+    sidebar: sidebar,
   }),
 };

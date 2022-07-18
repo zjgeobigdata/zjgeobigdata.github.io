@@ -6,12 +6,12 @@ module.exports = [
       {
         text: "脚手架",
         children: [
-          { text: "vue-vite-script", link: "/document/vueViteScript/" },
+          { text: "Vue-vite-script", link: "/document/vueViteScript/" },
         ],
       },
       {
         text: "hooks",
-        children: [{ text: "dz-hooks", link: "/document/dzHooks/" }],
+        children: [{ text: "DZ-hooks", link: "/document/dzHooks/" }],
       },
     ],
   },

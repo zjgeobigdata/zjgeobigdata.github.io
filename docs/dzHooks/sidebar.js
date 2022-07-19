@@ -21,4 +21,18 @@ module.exports = [
       },
     ],
   },
+  {
+    text: "Element",
+    collapsable: true,
+    children: [
+      {
+        text: "useModalFn",
+        link: "/dzHooks/pages/UseModalFn",
+      },
+      {
+        text: "usePagination",
+        link: "/dzHooks/pages/UsePagination",
+      },
+    ],
+  },
 ];

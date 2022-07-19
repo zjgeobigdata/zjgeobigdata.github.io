@@ -13,8 +13,6 @@ npm install dz-hooks
 
 ## ⚡使用
 
-- **Async**
-  - `useRequest` — 一个完整的管理异步数据请求的Hook
 - **Side**
   - `useDebounce` — 用于处理防抖值的 Hook.
   - `useDebounceFn` — 用于处理防抖函数的 Hook.
@@ -36,6 +34,8 @@ npm install dz-hooks
   - `useWebSocket` — 用于处理 WebSocket 的 Hook。
   <!-- - `useRouteQuery` — 用于获取url query值的 Hook. -->
 - **UI**
+  - `useModalFn` — 一个控制Element Plus的Modal弹窗状态的Hook.
+  - `usePagination` — 一个控制Element Plus的Table表格分页的Hook.
   - `useVirtualList` — 用于长列表虚拟化列表的 Hook.
   - `useDynamicList` — 用于管理列表状态 Hook.
   - `useMediaQuery` — 用于监听 mediaQuery 状态的 Hook。

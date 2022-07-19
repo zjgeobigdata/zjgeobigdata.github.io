@@ -1,0 +1,1 @@
+import{_ as e,o as t,c as n,a as _}from"./app.9f1c550a.js";const c={},o=_("h2",{id:"\u8FD9\u662Fdz-element\u7684\u4ECB\u7ECD\u6587\u6863",tabindex:"-1"},"\u8FD9\u662FDZ-element\u7684\u4ECB\u7ECD\u6587\u6863",-1),a=[o];function s(r,d){return t(),n("div",null,a)}var l=e(c,[["render",s],["__file","index.html.vue"]]);export{l as default};

@@ -49,7 +49,6 @@ module.exports = {
     registerComponentsPlugin({
       // 配置项
       componentsDir: path.resolve(__dirname, "./components"),
-      dzHooksDir: path.resolve(__dirname, "./dzHooks"),
     }),
   ],
 };

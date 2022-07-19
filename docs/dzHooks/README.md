@@ -8,6 +8,9 @@
 
 <br>
 
+## 安装
+npm install dz-hooks
+
 ## ⚡使用
 
 - **Async**

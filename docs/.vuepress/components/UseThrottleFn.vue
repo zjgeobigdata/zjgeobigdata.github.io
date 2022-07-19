@@ -24,7 +24,6 @@ export default {
     const { run } = useThrottleFn(() => {
       throttleFnValue.value++
     }, 500)
-
     return {
       throttleFnValue,
       run,

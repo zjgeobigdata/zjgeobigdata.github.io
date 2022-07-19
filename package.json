@@ -8,6 +8,7 @@
   },
   "dependencies": {
     "@vuepress/plugin-register-components": "^2.0.0-beta.49",
+    "axios": "^0.27.2",
     "dz-hooks": "^1.0.0",
     "element-plus": "^2.2.9"
   }

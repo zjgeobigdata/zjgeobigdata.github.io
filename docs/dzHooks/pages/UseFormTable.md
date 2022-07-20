@@ -9,10 +9,10 @@
 ```vue
 <template>
   <el-form :inline="true" ref="ruleFormRef" :model="formInline" class="demo-form-inline">
-    <el-form-item label="姓名">
+    <el-form-item label="姓名" prop="name">
       <el-input v-model="formInline.name" />
     </el-form-item>
-    <el-form-item label="地址">
+    <el-form-item label="地址" prop="address">
       <el-input v-model="formInline.address" />
     </el-form-item>
     <el-form-item>

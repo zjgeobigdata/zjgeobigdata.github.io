@@ -537,7 +537,7 @@
     ora "^5.4.1"
     upath "^2.0.1"
 
-"@vueuse/core@^8.7.5":
+"@vueuse/core@^8.7.5", "@vueuse/core@^8.9.4":
   version "8.9.4"
   resolved "https://registry.npmmirror.com/@vueuse/core/-/core-8.9.4.tgz#c7db40f19390b3c9f4ff9294a30461497f62ec19"
   integrity sha512-B/Mdj9TK1peFyWaPof+Zf/mP9XuGAngaJZBwPaXBvU3aCTZlx3ltlrFFFyMV4iGBwsjSCeUCgZrtkEj9dS2Y3Q==
@@ -789,12 +789,13 @@ dir-glob@^3.0.1:
   dependencies:
     path-type "^4.0.0"
 
-dz-hooks@^1.0.2:
-  version "1.0.2"
-  resolved "https://registry.npmjs.org/dz-hooks/-/dz-hooks-1.0.2.tgz#f5629090e0389998b610d60f8aeae1db3f61045d"
-  integrity sha512-S44UvxwFLT8cJJyGRx+tjS7TpsUBgPcmNmWZCPU1f1x/b8RfJ+LfOQLexb+pR/MK9ChVubjZ+Cp3rTXp4UkrQg==
+dz-hooks@1.1.3:
+  version "1.1.3"
+  resolved "https://registry.npmjs.org/dz-hooks/-/dz-hooks-1.1.3.tgz#d869f94faa9e5b1c98df69616564970de2b397ad"
+  integrity sha512-MiV5P2237hawynNVJcY/Dxzt2gbypcfIfHjYUnaFZwsKk83IwIKzZ8nnlNHBwAQ2P7oA04Yhq6XcOFKCGhdglg==
   dependencies:
     "@babel/runtime" "^7.16.7"
+    "@vueuse/core" "^8.9.4"
     dayjs "^1.10.5"
     easyqrcodejs "^4.4.5"
     js-cookie "^2.2.1"

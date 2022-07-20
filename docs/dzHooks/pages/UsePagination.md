@@ -63,3 +63,14 @@ const {
 | onSizeChange    | 当前表格每页总量变化回调 | (pageSize:number)=>void    | -   |
 | fetchData       | 请求函数         | ()=>void                   | -   |
 | pageDatas       | 请求结果         | {loading:boolean,data:any} | -   |
+
+## Params
+
+| 参数          | 说明               | 类型       | 默认值 |
+| ----------- | ---------------- | -------- | --- |
+| pageNum     | 默认请求表格页码数        | number   | -   |
+| pageSize    | 默认请求表格每页总量       | number   | -   |
+| requestList | 请求接口             | ()=>void | -   |
+| listKey     | 接口返回列表的key       | string   | -   |
+| pageSizeKey | 接口返回pageSize的key | string   | -   |
+| totalKey    | 接口返回全部数据量的key    | string   | -   |

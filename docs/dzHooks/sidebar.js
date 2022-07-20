@@ -22,7 +22,21 @@ module.exports = [
     ],
   },
   {
-    text: "Element",
+    text: "STATE",
+    collapsable: true,
+    children: [
+      {
+        text: "useBoolean",
+        link: "/dzHooks/pages/UseBoolean",
+      },
+      {
+        text: "useDate",
+        link: "/dzHooks/pages/UseDate",
+      },
+    ],
+  },
+  {
+    text: "UI",
     collapsable: true,
     children: [
       {

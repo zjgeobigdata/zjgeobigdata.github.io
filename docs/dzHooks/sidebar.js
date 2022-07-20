@@ -47,6 +47,10 @@ module.exports = [
         text: "usePagination",
         link: "/dzHooks/pages/UsePagination",
       },
+      {
+        text: "useFormTable",
+        link: "/dzHooks/pages/useFormTable",
+      },
     ],
   },
 ];

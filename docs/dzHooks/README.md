@@ -25,3 +25,4 @@ npm install dz-hooks
 - **UI**
   - `useModalFn` — 一个控制Element Plus的Modal弹窗状态的Hook.
   - `usePagination` — 一个控制Element Plus的Table表格分页的Hook.
+  - `useFormTable` — 一个控制Element Plus的带头部搜索查询的表格分页Hook.

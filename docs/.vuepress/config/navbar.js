@@ -14,7 +14,7 @@ module.exports = [
         children: [
           { text: "DZ-hooks", link: "/dzHooks" },
           {
-            text: "vue-use",
+            text: "VueUse",
             link: "https://vueuse.org/core/useAsyncState/",
           },
         ],

@@ -1,12 +1,3 @@
-# useRequest
-
-一个控制异步请求的Hook。
-
-## 基础用法
-
-<UseRequest/>
-
-```vue
 <template>
   <div class="container">
     <p>{{ data ? data.data : 'wait for request' }}</p>
@@ -43,5 +34,3 @@ export default defineComponent({
   padding: 10px;
 }
 </style>
-```
-相关Api参见 [VueRequest](https://next.attojs.com/guide/documentation/globalOptions.html)

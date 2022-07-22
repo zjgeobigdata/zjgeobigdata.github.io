@@ -17,7 +17,8 @@
     <el-table-column prop="Address" label="地址" />
   </el-table>
   <el-pagination class="pagination" small background :current-page="pageNum" @size-change="onSizeChange"
-    @current-change="onCurrentChange" layout="total, sizes, prev, pager, next, jumper" :total="total" />
+    @current-change="onCurrentChange" :page-size="pageSize" layout="total, sizes, prev, pager, next, jumper"
+    :total="total" />
 </template>
 
 <script lang="ts" setup>

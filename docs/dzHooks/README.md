@@ -12,7 +12,8 @@
 npm install dz-hooks
 
 ## ⚡使用
-
+- **Async**
+  - `useRequest` — 处理异步请求的Hook.
 - **Side**
   - `useDebounce` — 用于处理防抖值的 Hook.
   - `useDebounceFn` — 用于处理防抖函数的 Hook.

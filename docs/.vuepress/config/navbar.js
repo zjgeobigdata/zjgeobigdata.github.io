@@ -14,6 +14,10 @@ module.exports = [
         children: [
           { text: "DZ-hooks", link: "/dzHooks" },
           {
+            text: "VueRequest",
+            link: "https://next.attojs.com/guide/introduction.html",
+          },
+          {
             text: "VueUse",
             link: "https://vueuse.org/core/useAsyncState/",
           },

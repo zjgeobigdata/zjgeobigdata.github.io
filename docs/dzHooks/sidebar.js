@@ -1,5 +1,15 @@
 module.exports = [
   {
+    text: "Async",
+    collapsable: true,
+    children: [
+      {
+        text: "useRequest",
+        link: "/dzHooks/pages/UseRequest",
+      },
+    ],
+  },
+  {
     text: "Side",
     collapsable: true,
     children: [

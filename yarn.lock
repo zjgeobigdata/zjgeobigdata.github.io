@@ -789,16 +789,17 @@ dir-glob@^3.0.1:
   dependencies:
     path-type "^4.0.0"
 
-dz-hooks@1.1.5:
-  version "1.1.5"
-  resolved "https://registry.npmjs.org/dz-hooks/-/dz-hooks-1.1.5.tgz#44acf00862c57a5fb4ff5f66f905bbff7bf6a5a7"
-  integrity sha512-EGxErSC34VVfivPlVH7ypxbQESkxidZe/wzjhuorD2Lth8n+hv0hdTGCuZfoeMkjKBdcBhXq+AOqH+CI/syFhA==
+dz-hooks@1.2.0:
+  version "1.2.0"
+  resolved "https://registry.npmjs.org/dz-hooks/-/dz-hooks-1.2.0.tgz#04e43fcfd2a6b7349e58eedfa4ccf483de174f92"
+  integrity sha512-WDQtBip42Y8AL1PIs+J68mJeATIZB/ZxfJVTU9/mf8fuf5DCdCs96aHZFgCwBoEKvHCHnN5lELH9mqRXLzS5Jg==
   dependencies:
     "@babel/runtime" "^7.16.7"
     "@vueuse/core" "^8.9.4"
     dayjs "^1.10.5"
     easyqrcodejs "^4.4.5"
     js-cookie "^2.2.1"
+    vue-request "^2.0.0-rc.3"
 
 easyqrcodejs@^4.4.5:
   version "4.4.12"
@@ -1670,6 +1671,18 @@ vue-demi@*:
   version "0.13.5"
   resolved "https://registry.npmmirror.com/vue-demi/-/vue-demi-0.13.5.tgz#d5eddbc9eaefb89ce5995269d1fa6b0486312092"
   integrity sha512-tO3K2bML3AwiHmVHeKCq6HLef2st4zBXIV5aEkoJl6HZ+gJWxWv2O8wLH8qrA3SX3lDoTDHNghLX1xZg83MXvw==
+
+vue-demi@latest:
+  version "0.13.5"
+  resolved "https://registry.npmjs.org/vue-demi/-/vue-demi-0.13.5.tgz#d5eddbc9eaefb89ce5995269d1fa6b0486312092"
+  integrity sha512-tO3K2bML3AwiHmVHeKCq6HLef2st4zBXIV5aEkoJl6HZ+gJWxWv2O8wLH8qrA3SX3lDoTDHNghLX1xZg83MXvw==
+
+vue-request@^2.0.0-rc.3:
+  version "2.0.0-rc.3"
+  resolved "https://registry.npmjs.org/vue-request/-/vue-request-2.0.0-rc.3.tgz#b30e8d8f5964a255dfffa095a5bc1aa5ba64d19a"
+  integrity sha512-8ACVzScFWo7/rlUemRzti7J95ZtiH27/B/zaM6LnCOJwUoxE6zU8rRiuFIu40ZTbkHUSbNsvP1h6aY1a0Ig3Ew==
+  dependencies:
+    vue-demi latest
 
 vue-router@^4.1.2:
   version "4.1.2"

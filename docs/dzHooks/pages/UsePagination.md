@@ -14,7 +14,7 @@
     <el-table-column prop="Address" label="地址" />
   </el-table>
   <el-pagination class="pagination" small background @size-change="onSizeChange" @current-change="onCurrentChange"
-    layout="total, sizes, prev, pager, next, jumper" :current-page="pageNum" :total="total" />
+    layout="total, sizes, prev, pager, next, jumper" :current-page="pageNum" :page-size="pageSize" :total="total" />
 </template>
 
 <script lang="ts" setup>
@@ -35,7 +35,7 @@ const {
   onSizeChange,
   fetchData,
   pageDatas,
-} = usePagination({ pageNum: 1, pageSize: 10, requestList: listPaging, listKey: 'records', pageSizeKey: 'size', totalKey: 'totalElements' })
+} = usePagination({}, { pageNum: 1, pageSize: 10, requestList: listPaging, listKey: 'records', pageSizeKey: 'size', totalKey: 'totalElements' })
 </script>
 
 <style>

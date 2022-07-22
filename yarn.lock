@@ -789,10 +789,10 @@ dir-glob@^3.0.1:
   dependencies:
     path-type "^4.0.0"
 
-dz-hooks@1.2.0:
-  version "1.2.0"
-  resolved "https://registry.npmjs.org/dz-hooks/-/dz-hooks-1.2.0.tgz#04e43fcfd2a6b7349e58eedfa4ccf483de174f92"
-  integrity sha512-WDQtBip42Y8AL1PIs+J68mJeATIZB/ZxfJVTU9/mf8fuf5DCdCs96aHZFgCwBoEKvHCHnN5lELH9mqRXLzS5Jg==
+dz-hooks@^1.2.1:
+  version "1.2.1"
+  resolved "https://registry.npmjs.org/dz-hooks/-/dz-hooks-1.2.1.tgz#3a2a3afc035b9650d96ceae2980e2335768e2b30"
+  integrity sha512-zj5xH8jfrzB1dic9FA6sAA4/dChJtOJvazr5bIicVF+vHijharclgzzSoYUoM0SScwo/m5qW4mIowQDBoa5JtA==
   dependencies:
     "@babel/runtime" "^7.16.7"
     "@vueuse/core" "^8.9.4"

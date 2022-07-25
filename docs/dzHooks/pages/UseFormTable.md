@@ -105,4 +105,4 @@ const {
 | totalKey     | 接口返回全部数据量的key    | string   | -   |
 | formInline   | 表单请求数据           | object   | -   |
 | formRef      | 表单Ref            | Ref      | -   |
-| defaultParam | 默认请求参数           | object   | -   |
+| defaultParams | 默认请求参数           | object   | -   |

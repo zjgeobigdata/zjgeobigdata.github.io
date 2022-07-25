@@ -49,7 +49,7 @@ const {
   fetchData,
   totalRequestParam,
   pageDatas,
-} = useFormTable(formInline, { pageNum: 1, pageSize: 10, formRef: ruleFormRef, requestList: listPaging, listKey: 'records', pageSizeKey: 'size', totalKey: 'totalElements' })
+} = useFormTable({ pageNum: 1, pageSize: 10, formRef: ruleFormRef, defaultParams:formInline, requestList: listPaging, listKey: 'records', pageSizeKey: 'size', totalKey: 'totalElements' })
 </script>
 
 <style>

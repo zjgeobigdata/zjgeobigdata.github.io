@@ -35,7 +35,7 @@ const {
   onSizeChange,
   fetchData,
   pageDatas,
-} = usePagination({}, { pageNum: 1, pageSize: 10, requestList: listPaging, listKey: 'records', pageSizeKey: 'size', totalKey: 'totalElements' })
+} = usePagination({ pageNum: 1, pageSize: 10, requestList: listPaging, listKey: 'records', pageSizeKey: 'size', totalKey: 'totalElements' })
 </script>
 
 <style>
@@ -66,11 +66,12 @@ const {
 
 ## Params
 
-| 参数          | 说明               | 类型       | 默认值 |
-| ----------- | ---------------- | -------- | --- |
-| pageNum     | 默认请求表格页码数        | number   | -   |
-| pageSize    | 默认请求表格每页总量       | number   | -   |
-| requestList | 请求接口             | ()=>void | -   |
-| listKey     | 接口返回列表的key       | string   | -   |
-| pageSizeKey | 接口返回pageSize的key | string   | -   |
-| totalKey    | 接口返回全部数据量的key    | string   | -   |
+| 参数           | 说明               | 类型       | 默认值 |
+| ------------ | ---------------- | -------- | --- |
+| pageNum      | 默认请求表格页码数        | number   | -   |
+| pageSize     | 默认请求表格每页总量       | number   | -   |
+| requestList  | 请求接口             | ()=>void | -   |
+| listKey      | 接口返回列表的key       | string   | -   |
+| pageSizeKey  | 接口返回pageSize的key | string   | -   |
+| totalKey     | 接口返回全部数据量的key    | string   | -   |
+| defaultParam | 默认接口请求参数         | object   | -   |

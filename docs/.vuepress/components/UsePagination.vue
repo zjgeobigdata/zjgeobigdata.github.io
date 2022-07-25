@@ -26,7 +26,7 @@ const {
   onSizeChange,
   fetchData,
   pageDatas,
-} = usePagination({}, { pageNum: 1, pageSize: 10, requestList: listPaging, listKey: 'records', pageSizeKey: 'size', totalKey: 'totalElements' })
+} = usePagination({ pageNum: 1, pageSize: 10, requestList: listPaging, listKey: 'records', pageSizeKey: 'size', totalKey: 'totalElements' })
 </script>
 
 <style>

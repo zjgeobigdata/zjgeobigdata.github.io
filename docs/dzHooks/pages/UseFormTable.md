@@ -58,7 +58,7 @@ const {
   fetchData,
   totalRequestParam,
   pageDatas,
-} = useFormTable(formInline, { pageNum: 1, pageSize: 10, formRef: ruleFormRef, requestList: listPaging, listKey: 'records', pageSizeKey: 'size', totalKey: 'totalElements' })
+} = useFormTable({ pageNum: 1, pageSize: 10, formRef: ruleFormRef, defaultParams:formInline, requestList: listPaging, listKey: 'records', pageSizeKey: 'size', totalKey: 'totalElements' })
 </script>
 
 <style>
@@ -95,13 +95,14 @@ const {
 
 ## Params
 
-| 参数          | 说明               | 类型       | 默认值 |
-| ----------- | ---------------- | -------- | --- |
-| pageNum     | 默认请求表格页码数        | number   | -   |
-| pageSize    | 默认请求表格每页总量       | number   | -   |
-| requestList | 请求接口             | ()=>void | -   |
-| listKey     | 接口返回列表的key       | string   | -   |
-| pageSizeKey | 接口返回pageSize的key | string   | -   |
-| totalKey    | 接口返回全部数据量的key    | string   | -   |
-| formInline  | 表单请求数据           | object   | -   |
-| formRef     | 表单Ref            | Ref      | -   |
+| 参数           | 说明               | 类型       | 默认值 |
+| ------------ | ---------------- | -------- | --- |
+| pageNum      | 默认请求表格页码数        | number   | -   |
+| pageSize     | 默认请求表格每页总量       | number   | -   |
+| requestList  | 请求接口             | ()=>void | -   |
+| listKey      | 接口返回列表的key       | string   | -   |
+| pageSizeKey  | 接口返回pageSize的key | string   | -   |
+| totalKey     | 接口返回全部数据量的key    | string   | -   |
+| formInline   | 表单请求数据           | object   | -   |
+| formRef      | 表单Ref            | Ref      | -   |
+| defaultParam | 默认请求参数           | object   | -   |

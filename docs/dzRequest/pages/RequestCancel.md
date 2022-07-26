@@ -28,7 +28,7 @@ export default defineComponent({
       loading.value = false
     };
     const cancel = async () => {
-      await request.cancelAllRequest()
+      await request.cancelRequest("https://dzfront.usemock.com/user/list")
       loading.value = false
       ElMessage.error('已取消请求');
     }

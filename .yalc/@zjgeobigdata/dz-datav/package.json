@@ -1,0 +1,41 @@
+{
+  "name": "@zjgeobigdata/dz-datav",
+  "version": "1.2.0",
+  "description": "Datav for vue3+vite",
+  "packageManager": "pnpm@6.32.3",
+  "keywords": [
+    "vue",
+    "vue3",
+    "datav"
+  ],
+  "main": "./dist/dz-datav.es.js",
+  "module": "./dist/dz-datav.es.js",
+  "types": "./dist/packages/dz-datav/index.d.ts",
+  "exports": {
+    ".": {
+      "require": "./dist/dz-datav.es.js",
+      "import": "./dist/dz-datav.es.js",
+      "types": "./dist/packages/dz-datav/index.d.ts"
+    },
+    "./dist/style.css": {
+      "import": "./dist/style.css",
+      "require": "./dist/style.css"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "vue-tsc --noEmit && vite build --config ../../build/lib.config.ts",
+    "lint": "eslint .",
+    "typecheck": "vue-tsc --noEmit"
+  },
+  "dependencies": {
+    "@jiaminghi/c-render": "^0.4.3",
+    "@jiaminghi/charts": "^0.2.18"
+  },
+  "eslintConfig": {
+    "extends": "@antfu"
+  },
+  "yalcSig": "10d3437791c47b631633055f5a4d475d"
+}

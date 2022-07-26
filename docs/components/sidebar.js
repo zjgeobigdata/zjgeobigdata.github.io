@@ -9,4 +9,14 @@ module.exports = [
       },
     ],
   },
+  {
+    text: "大屏组件",
+    collapsable: true,
+    children: [
+      {
+        text: "动态环图",
+        link: "/components/pages/ActiveRingChart",
+      },
+    ],
+  },
 ];

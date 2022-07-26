@@ -26,7 +26,7 @@ const cancelLoading = () => {
   if (requestNum === 0) loadingInstance?.close();
 };
 
-const dzRequest = request({
+const Request = request({
   loading: true, // 是否开启全局loading
   interceptors: {
     // 请求拦截器
@@ -61,5 +61,5 @@ const dzRequest = request({
   },
 });
 
-export default dzRequest;
+export default Request;
 ```

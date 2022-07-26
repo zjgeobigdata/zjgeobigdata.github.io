@@ -70,4 +70,4 @@ const {
 | listKey      | 接口返回列表的key       | string   | -   |
 | pageSizeKey  | 接口返回pageSize的key | string   | -   |
 | totalKey     | 接口返回全部数据量的key    | string   | -   |
-| defaultParams | 默认接口请求参数         | object   | -   |
+| defaultParams | 默认接口请求参数         | Reactive(object)   | -   |

@@ -100,6 +100,5 @@ const {
 | listKey      | 接口返回列表的key       | string   | -   |
 | pageSizeKey  | 接口返回pageSize的key | string   | -   |
 | totalKey     | 接口返回全部数据量的key    | string   | -   |
-| formInline   | 表单请求数据           | object   | -   |
 | formRef      | 表单Ref            | Ref      | -   |
-| defaultParams | 默认请求参数           | object   | -   |
+| defaultParams | 表单请求数据           | Reactive(object)   | -   |

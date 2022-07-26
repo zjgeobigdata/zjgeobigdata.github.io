@@ -1,5 +1,5 @@
 ## 取消请求
-需要在NetWork中开启节流后,在请求列表中查看效果
+需要在NetWork中开启节流后,先点击request按钮，再点击cancel按钮，在请求列表中查看效果
 
 <RequestCancel />
 

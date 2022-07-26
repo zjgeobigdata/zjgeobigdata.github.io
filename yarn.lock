@@ -783,10 +783,10 @@ dz-hooks@1.3.0:
     js-cookie "^2.2.1"
     vue-request "^2.0.0-rc.3"
 
-dz-request@0.1.9:
-  version "0.1.9"
-  resolved "https://registry.npmjs.org/dz-request/-/dz-request-0.1.9.tgz#8da0952b048e631bd03e15e5c27f736c7c507bf9"
-  integrity sha512-VcM+7CaR/S4GbYF0HRTuCmx6M6HpTaiB39oFcxqloXQFN4TLHfK2o1lYvvUrhw/wdGGX3uy+eFdBnAgbdJjRFQ==
+dz-request@^0.2.0:
+  version "0.2.0"
+  resolved "https://registry.npmjs.org/dz-request/-/dz-request-0.2.0.tgz#1ca8bdfa409c8eaf5174b7715f056103b7f26885"
+  integrity sha512-WdHYx9EhexWC18G2dsa4qZ4qqmcoh4LiqiyEiwkL6alwopm6Swoe2atTj1Nx+YUW6H1t2+HeWknTarbRum9m/g==
   dependencies:
     "@babel/runtime" "^7.16.7"
     axios "0.26.0"

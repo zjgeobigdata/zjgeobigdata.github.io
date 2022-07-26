@@ -11,4 +11,8 @@ module.exports = [
     text: "取消请求",
     link: "/dzRequest/pages/RequestCancel"
   },
+  {
+    text: "完整Api说明",
+    link: "/dzRequest/pages/RequestDocument"
+  },
 ];

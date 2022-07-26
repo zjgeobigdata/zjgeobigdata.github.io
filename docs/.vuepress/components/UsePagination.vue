@@ -10,13 +10,9 @@
 
 <script lang="ts" setup>
 import { usePagination } from 'dz-hooks'
-import axios from 'axios'
-const listPaging = (params) => {
-  return axios.request({
-    url: "https://dzfront.usemock.com/user/list",
-    method: "get",
-    params,
-  });
+import request from './service'
+const listPaging = (data) => {
+  return request.get("https://dzfront.usemock.com/user/list",data,{loading:false})
 };
 const {
   pageNum,

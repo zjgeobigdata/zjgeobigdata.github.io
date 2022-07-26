@@ -1,28 +1,29 @@
 <template>
   <div class="container">
-    <p>{{ data ? data.data : 'wait for request' }}</p>
-    <el-button :loading="loading" type="primary" @click="run">request</el-button>
+    <p>useRequest示例</p>
+    <p>{{ data ? data : "wait for request" }}</p>
+    <el-button :loading="loading" type="primary" @click="run">requestSuccess</el-button>
   </div>
 </template>
 
 <script lang="ts">
+import request from "./service";
 import { defineComponent, ref } from "vue";
-import { mainStore } from "@/store";
-import { useRequest } from "dz-hooks"
-import axios from "axios"
+import { useRequest } from "dz-hooks";
 export default defineComponent({
-  name: "helloWorld",
+  name: "hello-world",
   setup() {
-    const mockRequest = () => {
-      return axios.get('https://dzfront.usemock.com/user/list');
+    const requestSuccess = () => {
+      return request.get("https://dzfront.usemock.com/user/list");
     };
-    const { data, run, loading } = useRequest(mockRequest, {
+    const { data, run, loading } = useRequest(requestSuccess, {
       manual: true,
     });
     return {
+      requestSuccess,
       data,
+      loading,
       run,
-      loading
     };
   },
 });

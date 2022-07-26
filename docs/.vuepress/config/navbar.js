@@ -10,6 +10,12 @@ module.exports = [
         ],
       },
       {
+        text: "请求库",
+        children: [
+          { text: "DZ-request", link: "/dzRequest" },
+        ],
+      },
+      {
         text: "Hooks",
         children: [
           { text: "DZ-hooks", link: "/dzHooks" },

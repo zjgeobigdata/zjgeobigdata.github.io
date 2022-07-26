@@ -34,15 +34,12 @@
 import { useFormTable } from 'dz-hooks'
 import { ref, reactive } from 'vue'
 import type { FormInstance, FormRules } from 'element-plus'
-import axios from 'axios'
+import request from './service'
 
-const listPaging = (params) => {
-  return axios.request({
-    url: "https://dzfront.usemock.com/user/list",
-    method: "get",
-    params,
-  });
-}
+const listPaging = (data) => {
+  return request.get("https://dzfront.usemock.com/user/list",data,{loading:false})
+};
+
 const formInline = reactive({
   name: '',
   address: '',

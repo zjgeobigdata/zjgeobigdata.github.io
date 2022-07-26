@@ -1,9 +1,3 @@
-## 取消请求
-需要在NetWork中开启节流后,在请求列表中查看效果
-
-<RequestCancel />
-
-```vue
 <template>
   <div class="container">
     <p>取消请求示例</p>
@@ -47,4 +41,3 @@ export default defineComponent({
   padding: 10px;
 }
 </style>
-```

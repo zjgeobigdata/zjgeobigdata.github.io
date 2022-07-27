@@ -15,7 +15,7 @@ module.exports = {
   bundler: viteBundler({
     viteOptions: {
       ssr: {
-        noExternal: ["element-plus", "dz-hooks"],
+        noExternal: ["element-plus", "dz-hooks", "dz-datav"],
       },
     },
   }),

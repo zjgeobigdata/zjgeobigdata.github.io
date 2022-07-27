@@ -1,0 +1,59 @@
+import{_ as n,o as s,c as a,b as t}from"./app.4e695221.js";const p={},o=t(`<h2 id="\u62E6\u622A\u5668\u914D\u7F6E" tabindex="-1">\u62E6\u622A\u5668\u914D\u7F6E</h2><p>\u62E6\u622A\u5668\u63A8\u8350\u914D\u7F6E\u5982\u4E0B,\u4EE5\u4E0B\u662F\u521B\u5EFA\u8BF7\u6C42\u5B9E\u4F8B\u7684\u4EE3\u7801: <br><strong>(\u540C\u65F6\u4E5F\u662F\u672C\u6587\u6863\u6240\u6709\u548C\u7F51\u7EDC\u8BF7\u6C42\u76F8\u5173demo\u7684\u8BF7\u6C42\u5B9E\u4F8B \u5BFC\u5165\u7684 import request from &#39;./service&#39; \u4E2Dservice\u6587\u4EF6\u5939\u4E2Dindex.ts\u7684\u4EE3\u7801)</strong></p><div class="language-typescript ext-ts"><pre class="language-typescript"><code><span class="token keyword">import</span> request <span class="token keyword">from</span> <span class="token string">&quot;dz-request&quot;</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> ElLoading<span class="token punctuation">,</span> ElMessage <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&quot;element-plus&quot;</span><span class="token punctuation">;</span>
+
+<span class="token keyword">let</span> loadingInstance<span class="token operator">:</span> <span class="token builtin">any</span> <span class="token operator">=</span> <span class="token keyword">null</span><span class="token punctuation">;</span>
+<span class="token keyword">let</span> requestNum <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> <span class="token function-variable function">addLoading</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token comment">// \u589E\u52A0loading \u5982\u679Cpending\u8BF7\u6C42\u6570\u91CF\u7B49\u4E8E1\uFF0C\u5F39\u51FAloading, \u9632\u6B62\u91CD\u590D\u5F39\u51FA</span>
+  requestNum<span class="token operator">++</span><span class="token punctuation">;</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>requestNum <span class="token operator">==</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    loadingInstance <span class="token operator">=</span> ElLoading<span class="token punctuation">.</span><span class="token function">service</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+      text<span class="token operator">:</span> <span class="token string">&quot;\u52AA\u529B\u52A0\u8F7D\u4E2D....&quot;</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> <span class="token function-variable function">cancelLoading</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token comment">// \u53D6\u6D88loading \u5982\u679Cpending\u8BF7\u6C42\u6570\u91CF\u7B49\u4E8E0\uFF0C\u5173\u95EDloading</span>
+  requestNum<span class="token operator">--</span><span class="token punctuation">;</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>requestNum <span class="token operator">===</span> <span class="token number">0</span><span class="token punctuation">)</span> loadingInstance<span class="token operator">?.</span><span class="token function">close</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> Request <span class="token operator">=</span> <span class="token function">request</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  loading<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span> <span class="token comment">// \u662F\u5426\u5F00\u542F\u5168\u5C40loading</span>
+  interceptors<span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token comment">// \u8BF7\u6C42\u62E6\u622A\u5668</span>
+    <span class="token function-variable function">requestInterceptors</span><span class="token operator">:</span> <span class="token punctuation">(</span>config<span class="token operator">:</span> <span class="token builtin">any</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+      <span class="token keyword">const</span> <span class="token punctuation">{</span> loading <span class="token operator">=</span> <span class="token boolean">false</span> <span class="token punctuation">}</span> <span class="token operator">=</span> config<span class="token punctuation">;</span>
+      <span class="token builtin">console</span><span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">&quot;config:&quot;</span><span class="token punctuation">,</span> config<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token keyword">if</span> <span class="token punctuation">(</span>loading<span class="token punctuation">)</span> <span class="token function">addLoading</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token keyword">return</span> config<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token comment">// \u8BF7\u6C42\u62E6\u622A\u5668\u9519\u8BEF</span>
+    <span class="token function-variable function">requestInterceptorsCatch</span><span class="token operator">:</span> <span class="token punctuation">(</span>err<span class="token operator">:</span> <span class="token builtin">any</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+      <span class="token keyword">return</span> <span class="token builtin">Promise</span><span class="token punctuation">.</span><span class="token function">reject</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token comment">// \u54CD\u5E94\u62E6\u622A\u5668</span>
+    <span class="token function-variable function">responseInterceptors</span><span class="token operator">:</span> <span class="token punctuation">(</span>res<span class="token operator">:</span> <span class="token builtin">any</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+      <span class="token keyword">const</span> <span class="token punctuation">{</span> loading <span class="token operator">=</span> <span class="token boolean">false</span> <span class="token punctuation">}</span> <span class="token operator">=</span> res<span class="token punctuation">.</span>config<span class="token punctuation">;</span>
+      <span class="token keyword">if</span> <span class="token punctuation">(</span>loading<span class="token punctuation">)</span> <span class="token function">cancelLoading</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token keyword">const</span> <span class="token punctuation">{</span> code<span class="token punctuation">,</span> message <span class="token punctuation">}</span> <span class="token operator">=</span> res<span class="token punctuation">.</span>data<span class="token punctuation">;</span>
+      <span class="token keyword">if</span> <span class="token punctuation">(</span>code <span class="token operator">==</span> <span class="token number">200</span><span class="token punctuation">)</span> <span class="token keyword">return</span> res<span class="token punctuation">.</span>data<span class="token punctuation">;</span>
+      <span class="token keyword">else</span> <span class="token punctuation">{</span>
+        ElMessage<span class="token punctuation">.</span><span class="token function">error</span><span class="token punctuation">(</span>message<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">return</span> <span class="token builtin">Promise</span><span class="token punctuation">.</span><span class="token function">reject</span><span class="token punctuation">(</span>message<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token comment">// \u54CD\u5E94\u62E6\u622A\u5668\u9519\u8BEF</span>
+    <span class="token function-variable function">responseInterceptorsCatch</span><span class="token operator">:</span> <span class="token punctuation">(</span>err<span class="token operator">:</span> <span class="token builtin">any</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+      <span class="token keyword">const</span> <span class="token punctuation">{</span> loading <span class="token operator">=</span> <span class="token boolean">false</span> <span class="token punctuation">}</span> <span class="token operator">=</span> err<span class="token punctuation">.</span>config<span class="token punctuation">;</span>
+      <span class="token keyword">if</span> <span class="token punctuation">(</span>loading<span class="token punctuation">)</span> <span class="token function">cancelLoading</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      ElMessage<span class="token punctuation">.</span><span class="token function">error</span><span class="token punctuation">(</span>err<span class="token operator">?.</span>response<span class="token operator">?.</span>data<span class="token operator">?.</span>message <span class="token operator">||</span> <span class="token string">&quot;\u670D\u52A1\u7AEF\u5F02\u5E38&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token keyword">return</span> <span class="token builtin">Promise</span><span class="token punctuation">.</span><span class="token function">reject</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> Request<span class="token punctuation">;</span>
+</code></pre></div>`,3),e=[o];function c(u,l){return s(),a("div",null,e)}var i=n(p,[["render",c],["__file","RequestInterceptors.html.vue"]]);export{i as default};

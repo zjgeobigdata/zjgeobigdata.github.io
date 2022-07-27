@@ -1,9 +1,0 @@
-{
-  "version": "v1",
-  "packages": {
-    "@zjgeobigdata/dz-datav": {
-      "signature": "10d3437791c47b631633055f5a4d475d",
-      "file": true
-    }
-  }
-}

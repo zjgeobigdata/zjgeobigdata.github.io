@@ -1,6 +1,6 @@
 ## 完整Api说明
 
-1.创建请求示例
+1.创建请求实例
 ```ts
 import request from "dz-request";
 const Request = request({

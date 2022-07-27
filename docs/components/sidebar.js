@@ -1,6 +1,6 @@
 module.exports = [
   {
-    text: "通用",
+    text: "DZ-element",
     collapsable: true,
     children: [
       {
@@ -10,7 +10,7 @@ module.exports = [
     ],
   },
   {
-    text: "大屏组件",
+    text: "DZ-datav",
     collapsable: true,
     children: [
       {

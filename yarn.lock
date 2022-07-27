@@ -7,7 +7,7 @@
   resolved "https://registry.npmmirror.com/@babel/parser/-/parser-7.18.8.tgz#822146080ac9c62dac0823bb3489622e0bc1cbdf"
   integrity sha512-RSKRfYX20dyH+elbJK2uqAkVyucL+xXzhqlMD5/ZXx+dAAwpyB7HsvnHe/ZUGOF+xLr5Wx9/JoXVTj6BQE2/oA==
 
-"@babel/runtime@^7.16.7", "@babel/runtime@^7.5.5":
+"@babel/runtime@^7.16.7":
   version "7.18.9"
   resolved "https://registry.npmjs.org/@babel/runtime/-/runtime-7.18.9.tgz#b4fcfce55db3d2e5e080d2490f608a3b9f407f4a"
   integrity sha512-lkqXDcvlFT5rvEjiu6+QYO+1GXrEHRo2LOtS7E4GtX5ESIZOgepqsZBVIj6Pv+a6zqsya9VCgiK1KAK4BvJDAw==
@@ -35,45 +35,6 @@
   integrity sha512-419BMceRLq0RrmTSDxn8hf9R3VCJv2K9PUfugh5JyEFmdjzDo+e8U5EdR8nzKq8Yj1htzLm3b6eQEEam3/rrtg==
   dependencies:
     "@floating-ui/core" "^0.7.3"
-
-"@jiaminghi/bezier-curve@*":
-  version "0.0.9"
-  resolved "https://registry.npmjs.org/@jiaminghi/bezier-curve/-/bezier-curve-0.0.9.tgz#5196aca93c8b061a612b4c3eabcedf9490cef6ee"
-  integrity sha512-u9xJPOEl6Dri2E9FfmJoGxYQY7vYJkURNX04Vj64tdi535tPrpkuf9Sm0lNr3QTKdHQh0DdNRsaa62FLQNQEEw==
-  dependencies:
-    "@babel/runtime" "^7.5.5"
-
-"@jiaminghi/c-render@^0.4.3":
-  version "0.4.3"
-  resolved "https://registry.npmjs.org/@jiaminghi/c-render/-/c-render-0.4.3.tgz#982ebd8f71b443bb9507834227834973ebd9b6d8"
-  integrity sha512-FJfzj5hGj7MLqqqI2D7vEzHKbQ1Ynnn7PJKgzsjXaZpJzTqs2Yw5OSeZnm6l7Qj7jyPAP53lFvEQNH4o4j6s+Q==
-  dependencies:
-    "@babel/runtime" "^7.5.5"
-    "@jiaminghi/bezier-curve" "*"
-    "@jiaminghi/color" "*"
-    "@jiaminghi/transition" "*"
-
-"@jiaminghi/charts@^0.2.18":
-  version "0.2.18"
-  resolved "https://registry.npmjs.org/@jiaminghi/charts/-/charts-0.2.18.tgz#63ded95200789fc1a1fd04b7fd9e56f58d22d90f"
-  integrity sha512-K+HXaOOeWG9OOY1VG6M4mBreeeIAPhb9X+khG651AbnwEwL6G2UtcAQ8GWCq6GzhczcLwwhIhuaHqRygwHC0sA==
-  dependencies:
-    "@babel/runtime" "^7.5.5"
-    "@jiaminghi/c-render" "^0.4.3"
-
-"@jiaminghi/color@*":
-  version "0.1.1"
-  resolved "https://registry.npmjs.org/@jiaminghi/color/-/color-0.1.1.tgz#bddf9012dfce6982d3829a983ffeb91ee9dda7b6"
-  integrity sha512-M09+Sb5HGqVim0zo+nG5gU1v+6gXT8ptr0BZR6dMGt83XmCJgnZtO8s7llTW4hLFFFM5co6geZvTekqLpSPAAQ==
-  dependencies:
-    "@babel/runtime" "^7.5.5"
-
-"@jiaminghi/transition@*":
-  version "1.1.11"
-  resolved "https://registry.npmjs.org/@jiaminghi/transition/-/transition-1.1.11.tgz#576d8af092434b34201eba5eaecc79dd33c8ad8c"
-  integrity sha512-owBggipoHMikDHHDW5Gc7RZYlVuvxHADiU4bxfjBVkHDAmmck+fCkm46n2JzC3j33hWvP9nSCAeh37t6stgWeg==
-  dependencies:
-    "@babel/runtime" "^7.5.5"
 
 "@mdit-vue/plugin-component@^0.6.0":
   version "0.6.0"
@@ -810,13 +771,14 @@ dir-glob@^3.0.1:
   dependencies:
     path-type "^4.0.0"
 
-dz-datav@^1.2.0:
-  version "1.2.0"
-  resolved "https://registry.npmjs.org/dz-datav/-/dz-datav-1.2.0.tgz#07ac91201ff688bc743f582ede4e5783eeaffd57"
-  integrity sha512-kFTuUEZTg7BBDDtAVqDOUnICDP5q1c9xProXsUEgmuQh/etnu/QKpw3k3nn6ixd8r3MZt0k3rE0R90asdFIa0Q==
+dz-datav@^1.2.2:
+  version "1.2.2"
+  resolved "https://registry.npmjs.org/dz-datav/-/dz-datav-1.2.2.tgz#a6309e05850c012320fc66da2ec7ba96e7ee8e1c"
+  integrity sha512-uIjG2Km9WPU2woLT6/Yiuymj3CgT5+qfkkfxDlYLdo3WOFuZiRrDz/vcfJ80mj0jPLynK9rwvxqrxKe0WNHfYQ==
   dependencies:
-    "@jiaminghi/c-render" "^0.4.3"
-    "@jiaminghi/charts" "^0.2.18"
+    echarts "^5.3.3"
+    vue-echarts "^6.2.3"
+    vuecharts3 "^2.2.5"
 
 dz-hooks@1.3.0:
   version "1.3.0"
@@ -845,6 +807,14 @@ easyqrcodejs@^4.4.5:
   version "4.4.12"
   resolved "https://registry.npmjs.org/easyqrcodejs/-/easyqrcodejs-4.4.12.tgz#79822d9dcbfd50d4984515f8f3d6a417dc9d901c"
   integrity sha512-ilibrPulpJNBM8Oy2ypNNcI0Y0/aJfJpx1lkLrfRA1Tg682ehLkULbp5rSNr/L1EjNbfaHzak+ufw2iSwhCkRQ==
+
+echarts@^5.3.3:
+  version "5.3.3"
+  resolved "https://registry.npmjs.org/echarts/-/echarts-5.3.3.tgz#df97b09c4c0e2ffcdfb44acf518d50c50e0b838e"
+  integrity sha512-BRw2serInRwO5SIwRviZ6Xgm5Lb7irgz+sLiFMmy/HOaf4SQ+7oYqxKzRHAKp4xHQ05AuHw1xvoQWJjDQq/FGw==
+  dependencies:
+    tslib "2.3.0"
+    zrender "5.3.2"
 
 electron-to-chromium@^1.4.188:
   version "1.4.192"
@@ -1498,6 +1468,11 @@ regenerator-runtime@^0.13.4:
   resolved "https://registry.npmjs.org/regenerator-runtime/-/regenerator-runtime-0.13.9.tgz#8925742a98ffd90814988d7566ad30ca3b263b52"
   integrity sha512-p3VT+cOEgxFsRRA9X4lkI1E+k2/CtnKtU4gcxyaCUreilL/vqI6CdZ3wxVUx3UOUg+gnUOQQcRI7BmSI656MYA==
 
+resize-detector@^0.3.0:
+  version "0.3.0"
+  resolved "https://registry.npmjs.org/resize-detector/-/resize-detector-0.3.0.tgz#fe495112e184695500a8f51e0389f15774cb1cfc"
+  integrity sha512-R/tCuvuOHQ8o2boRP6vgx8hXCCy87H1eY9V5imBYeVNyNVpuL9ciReSccLj2gDcax9+2weXy3bc8Vv+NRXeEvQ==
+
 resolve@^1.22.0:
   version "1.22.1"
   resolved "https://registry.npmmirror.com/resolve/-/resolve-1.22.1.tgz#27cb2ebb53f91abb49470a928bba7558066ac177"
@@ -1646,6 +1621,11 @@ ts-debounce@^4.0.0:
   resolved "https://registry.npmmirror.com/ts-debounce/-/ts-debounce-4.0.0.tgz#33440ef64fab53793c3d546a8ca6ae539ec15841"
   integrity sha512-+1iDGY6NmOGidq7i7xZGA4cm8DAa6fqdYcvO5Z6yBevH++Bdo9Qt/mN0TzHUgcCcKv1gmh9+W5dHqz8pMWbCbg==
 
+tslib@2.3.0:
+  version "2.3.0"
+  resolved "https://registry.npmjs.org/tslib/-/tslib-2.3.0.tgz#803b8cdab3e12ba581a4ca41c8839bbb0dacb09e"
+  integrity sha512-N82ooyxVNm6h1riLCoyS9e3fuJ3AMG2zIZs2Gd1ATcSFjSA23Q0fzjjZeh0jbJvWVDZ0cJT8yaNNaaXHzueNjg==
+
 uc.micro@^1.0.1, uc.micro@^1.0.5:
   version "1.0.6"
   resolved "https://registry.npmmirror.com/uc.micro/-/uc.micro-1.0.6.tgz#9c411a802a409a91fc6cf74081baba34b24499ac"
@@ -1691,10 +1671,23 @@ vue-demi@*:
   resolved "https://registry.npmmirror.com/vue-demi/-/vue-demi-0.13.5.tgz#d5eddbc9eaefb89ce5995269d1fa6b0486312092"
   integrity sha512-tO3K2bML3AwiHmVHeKCq6HLef2st4zBXIV5aEkoJl6HZ+gJWxWv2O8wLH8qrA3SX3lDoTDHNghLX1xZg83MXvw==
 
+vue-demi@^0.13.2:
+  version "0.13.6"
+  resolved "https://registry.npmjs.org/vue-demi/-/vue-demi-0.13.6.tgz#f9433cbd75e68a970dec066647f4ba6c08ced48f"
+  integrity sha512-02NYpxgyGE2kKGegRPYlNQSL1UWfA/+JqvzhGCOYjhfbLWXU5QQX0+9pAm/R2sCOPKr5NBxVIab7fvFU0B1RxQ==
+
 vue-demi@latest:
   version "0.13.5"
   resolved "https://registry.npmjs.org/vue-demi/-/vue-demi-0.13.5.tgz#d5eddbc9eaefb89ce5995269d1fa6b0486312092"
   integrity sha512-tO3K2bML3AwiHmVHeKCq6HLef2st4zBXIV5aEkoJl6HZ+gJWxWv2O8wLH8qrA3SX3lDoTDHNghLX1xZg83MXvw==
+
+vue-echarts@^6.2.3:
+  version "6.2.3"
+  resolved "https://registry.npmjs.org/vue-echarts/-/vue-echarts-6.2.3.tgz#77973c417a56bca76847576ab903ab92979d75bb"
+  integrity sha512-xHzUvgsgk/asJTcNa8iVVwoovZU3iEUHvmBa3bzbiP3Y6OMxM1YXsoWOKVmVVaUusGs4ob4pSwjwNy2FemAz9w==
+  dependencies:
+    resize-detector "^0.3.0"
+    vue-demi "^0.13.2"
 
 vue-request@^2.0.0-rc.3:
   version "2.0.0-rc.3"
@@ -1720,6 +1713,13 @@ vue@^3.2.37:
     "@vue/runtime-dom" "3.2.37"
     "@vue/server-renderer" "3.2.37"
     "@vue/shared" "3.2.37"
+
+vuecharts3@^2.2.5:
+  version "2.2.5"
+  resolved "https://registry.npmjs.org/vuecharts3/-/vuecharts3-2.2.5.tgz#c31cb55d396a7390c1817ed7370d36714ec3831e"
+  integrity sha512-/UNAkedS/pEbaqEtjnsTpzyL1y+Hk+vQ0i71Ro3B7eOSKWrVWXqhUXbSRxyK6lhfwTNCLZs9+gJ3Q1g3n40CJQ==
+  dependencies:
+    resize-detector "^0.3.0"
 
 vuepress-vite@2.0.0-beta.49:
   version "2.0.0-beta.49"
@@ -1751,3 +1751,10 @@ which@^2.0.1:
   integrity sha512-BLI3Tl1TW3Pvl70l3yq3Y64i+awpwXqsGBYWkkqMtnbXgrMD+yj7rhW0kuEDxzJaYXGjEW5ogapKNMEKNMjibA==
   dependencies:
     isexe "^2.0.0"
+
+zrender@5.3.2:
+  version "5.3.2"
+  resolved "https://registry.npmjs.org/zrender/-/zrender-5.3.2.tgz#f67b11d36d3d020d62411d3bb123eb1c93cccd69"
+  integrity sha512-8IiYdfwHj2rx0UeIGZGGU4WEVSDEdeVCaIg/fomejg1Xu6OifAL1GVzIPHg2D+MyUkbNgPWji90t0a8IDk+39w==
+  dependencies:
+    tslib "2.3.0"

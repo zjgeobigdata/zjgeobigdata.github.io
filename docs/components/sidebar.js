@@ -14,8 +14,12 @@ module.exports = [
     collapsable: true,
     children: [
       {
-        text: "动态环图",
-        link: "/components/pages/ActiveRingChart",
+        text: "环状图",
+        link: "/components/pages/RingChart",
+      },
+      {
+        text: "通用图表",
+        link: "/components/pages/CustomChart",
       },
     ],
   },

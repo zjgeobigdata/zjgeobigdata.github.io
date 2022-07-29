@@ -21,6 +21,14 @@ module.exports = [
         text: "通用图表",
         link: "/components/pages/CustomChart",
       },
+      {
+        text: "边框1",
+        link: "/components/pages/BorderBox1",
+      },
+      {
+        text: "装饰1",
+        link: "/components/pages/Decoration1",
+      },
     ],
   },
 ];

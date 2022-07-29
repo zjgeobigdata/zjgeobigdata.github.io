@@ -9,16 +9,16 @@
 ```vue
 <template>
     <dz-ring-chart 
-      class="container" 
+      class="container"
+      :data="[
+        { value: 50, name: '建筑用石料' },
+        { value: 40, name: '其它非金属矿产' },
+        { value: 25, name: '金属矿产' },
+        { value: 40, name: '能源矿产' },
+        { value: 25, name: '水气矿产' },
+      ]"
       :config="{
         radius: ['35%', '50%'],
-        data:[
-          { value: 50, name: '建筑用石料' },
-          { value: 40, name: '其它非金属矿产' },
-          { value: 25, name: '金属矿产' },
-          { value: 40, name: '能源矿产' },
-          { value: 25, name: '水气矿产' },
-        ],
         showLegend:true,
         legendConfig: {
           icon: 'circle',

@@ -7,7 +7,7 @@
   <div class="container">
     <p>Get请求示例</p>
     <p>{{ data ? data : "wait for request" }}</p>
-    <el-button :loading="loading" type="primary" @click="run">requestSuccess</el-button>
+    <el-button :loading="loading" type="primary" @click="run">request</el-button>
   </div>
 </template>
 

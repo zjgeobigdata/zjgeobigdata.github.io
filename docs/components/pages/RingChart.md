@@ -19,8 +19,8 @@
       ]"
       :config="{
         radius: ['35%', '50%'],
-        showLegend:true,
         legendConfig: {
+          show: true,
           icon: 'circle',
           orient: 'vertical',
           left: '65%',

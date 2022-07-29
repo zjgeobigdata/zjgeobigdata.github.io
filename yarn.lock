@@ -771,10 +771,10 @@ dir-glob@^3.0.1:
   dependencies:
     path-type "^4.0.0"
 
-dz-datav@^1.3.1:
-  version "1.3.1"
-  resolved "https://registry.npmjs.org/dz-datav/-/dz-datav-1.3.1.tgz#f59e968b826847a106d9771dfdb5b783f0c18965"
-  integrity sha512-FMNMNUEgvv35fcKp80tyuhfWAXLCn9UXiFi/N9JUAPtkS4hZDUEbirmta6PPNJd1mhBsgq80aTHs5j9MflidkA==
+dz-datav@^1.3.6:
+  version "1.3.6"
+  resolved "https://registry.npmjs.org/dz-datav/-/dz-datav-1.3.6.tgz#542dea8a068119fcb35458de09c594eae7ca080f"
+  integrity sha512-LsgVmH1RijPga3QVKnh9sY1VWWfeKuvT8yfp7iXkRLRAOehKjPF580UcaKPYlSGD9qey0wb/lFBIkrk6o0H87Q==
   dependencies:
     echarts "^5.3.3"
     vue-echarts "^6.2.3"

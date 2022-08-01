@@ -4,8 +4,6 @@
 
 ## 基础用法
 
-<BarChart />
-
 ```vue
 <template>
   <dz-bar-chart 

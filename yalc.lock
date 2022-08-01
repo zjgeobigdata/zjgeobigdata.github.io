@@ -1,0 +1,10 @@
+{
+  "version": "v1",
+  "packages": {
+    "dz-datav": {
+      "signature": "40a07f4bfc096ce1d09b1a1cc243292b",
+      "file": true,
+      "replaced": "^2.0.2"
+    }
+  }
+}

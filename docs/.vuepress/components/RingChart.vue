@@ -10,6 +10,8 @@
       ]"
       :config="{
         radius: ['35%', '50%'],
+        label:{ show: false },
+        labelLine: { show: false },
         legendConfig: {
           show: true,
           icon: 'circle',
@@ -66,6 +68,5 @@
   width: 300px;
   height: 300px;
   margin-top: 10px;
-  background-color: rgba(0,79,135,0.9);
 }
 </style>

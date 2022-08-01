@@ -14,49 +14,20 @@
       xAxisConfig: {
         type: 'category',
         data: ['越层', '超量', '粉尘', '噪声', '废水', '安全', '欠缴'],
-        axisLabel: {
-          color: '#D1F9FE',
-          textStyle: {
-            fontSize: '10',
-          },
-          interval: 0,
-        },
-        splitLine: {
-          lineStyle: {
-            color: '#004F87',
-          },
-        },
       },
-      yAxisConfig: [{
+      legendConfig:{
+        show: false
+      },
+      aAxisLabelConfig: {
+        color: '#D1F9FE',
+        textStyle: {
+          fontSize: '10',
+        },
+        interval: 0,
+      },
+      yAxisConfig: {
         type: 'value',
-        axisLabel: {
-          color: '#D1F9FE',
-          textStyle: {
-            fontSize: '10',
-          },
-          interval: 0,
-        },
-        splitLine: {
-          lineStyle: {
-            color: '#004F87',
-          },
-        },
-      }, 
-      {
-        type: 'value',
-        axisLabel: {
-          color: '#D1F9FE',
-          textStyle: {
-            fontSize: '10',
-          },
-          interval: 0,
-        },
-        splitLine: {
-          lineStyle: {
-            color: '#004F87',
-          },
-        },
-      }],
+      },
       gridConfig: {
         left: 50,
         right: 30,

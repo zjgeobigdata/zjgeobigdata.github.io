@@ -19,6 +19,7 @@
       ]"
       :config="{
         radius: ['35%', '50%'],
+        center: ['35%', '50%'],
         legendConfig: {
           show: true,
           icon: 'circle',

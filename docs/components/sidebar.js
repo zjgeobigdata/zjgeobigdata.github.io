@@ -22,6 +22,10 @@ module.exports = [
         link: "/components/pages/BarChart",
       },
       {
+        text: "热力图",
+        link: "/components/pages/HeatMap",
+      },
+      {
         text: "通用图表",
         link: "/components/pages/CustomChart",
       },

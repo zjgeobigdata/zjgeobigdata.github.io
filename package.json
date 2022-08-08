@@ -10,7 +10,7 @@
     "@vuepress/plugin-register-components": "^2.0.0-beta.49",
     "dz-datav": "^2.1.3",
     "dz-hooks": "1.3.0",
-    "dz-request": "^0.2.1",
+    "dz-request": "^0.2.2",
     "element-plus": "^2.2.9"
   }
 }

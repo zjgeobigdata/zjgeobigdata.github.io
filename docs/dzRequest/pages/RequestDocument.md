@@ -26,7 +26,7 @@ export default Request;
 
 2.通用请求
 ```ts
-  Request.dzRequest<D, T>(config: DZRequestConfig<D, T>) => Promise<DZResponse<T>>;
+  Request.dzRequest<D, T>(config: DZRequestConfig<D, T>) => Promise<T>;
   //例如以下是发起了get请求
   Request.dzRequest({
     url:'xxx',
@@ -38,13 +38,13 @@ export default Request;
 3.特定请求
 ```ts
   // get请求
-  Request.get<D, T>(url: string, data?: any, config?: DZRequestConfig<D, T>) => Promise<DZResponse<T>>;
+  Request.get<D, T>(url: string, data?: any, config?: DZRequestConfig<D, T>) => Promise<T>;
   // delete请求
-  Request.delete<D, T>(url: string, data?: any, config?: DZRequestConfig<D, T>) => Promise<DZResponse<T>>;
+  Request.delete<D, T>(url: string, data?: any, config?: DZRequestConfig<D, T>) => Promise<T>;
   // post请求
-  Request.post<D, T>(url: string, data?: any, config?: DZRequestConfig<D, T>) => Promise<DZResponse<T>>;
+  Request.post<D, T>(url: string, data?: any, config?: DZRequestConfig<D, T>) => Promise<T>;
   // put请求
-  Request.put<D, T>(url: string, data?: any, config?: DZRequestConfig<D, T>) => Promise<DZResponse<T>>;
+  Request.put<D, T>(url: string, data?: any, config?: DZRequestConfig<D, T>) => Promise<T>;
 ```
 
 4.取消请求

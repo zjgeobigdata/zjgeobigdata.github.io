@@ -59,3 +59,11 @@ const options = ref({
 }
 </style>
 ```
+
+## Api
+
+| 参数         | 说明               | 类型      | 默认值   |
+| ---------- | ---------------- | ------- | ----- |
+| class      | 图表容器类名           | string  | -     |
+| option     | 传入echarts的配置json | object  | -     |
+| autoresize | 是否跟随父容器自动调整大小    | boolean | false |

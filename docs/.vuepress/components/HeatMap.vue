@@ -60,10 +60,10 @@
 <script lang="ts" setup>
   const chartData = [
     [0, 0, 0],
-    [0, 1, 0],
+    [0, 1, 3],
     [0, 2, 0],
     [1, 0, 0],
-    [1, 1, 0],
+    [1, 1, 5],
     [1, 2, 0],
   ].map(function (item) {
     return [item[1], item[0], item[2]];

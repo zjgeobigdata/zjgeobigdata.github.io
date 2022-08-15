@@ -93,5 +93,17 @@
   background-color: rgba(0, 79, 135, 0.9);
 }
 </style>
-
 ```
+
+## Api
+
+| 参数        | 说明     | 类型       | 默认值 |
+| --------- | ------ | -------- | --- |
+| data      | 图表数据   | object[] | -   |
+| xAxisData | 横坐标数据  | number[] | -   |
+| yAxisData | 纵坐标数据  | number[] | -   |
+| config    | 图表专属配置 | object   | -   |
+
+**config配置项参考echarts官方文档**
+<br/>
+其余Api和通用图表相同

@@ -1,0 +1,1 @@
+import{_ as o,o as r,c as _,e as t,r as a}from"./app.9d916f81.js";const c={},n={class:"container"};function s(d,B){const e=a("dz-borderBox1");return r(),_("div",n,[t(e)])}var p=o(c,[["render",s],["__scopeId","data-v-3aa470ee"],["__file","BorderBox1.vue"]]);export{p as default};

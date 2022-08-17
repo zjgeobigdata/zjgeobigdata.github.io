@@ -1,0 +1,1 @@
+import{_ as o,o as _,c as t,e as a,r as c}from"./app.9d916f81.js";const n={},r={class:"container"};function s(d,i){const e=c("dz-decoration1");return _(),t("div",r,[a(e)])}var p=o(n,[["render",s],["__scopeId","data-v-7a6af162"],["__file","Decoration1.vue"]]);export{p as default};

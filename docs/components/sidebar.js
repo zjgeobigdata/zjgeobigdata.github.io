@@ -30,6 +30,10 @@ module.exports = [
         link: "/components/pages/CustomChart",
       },
       {
+        text: "分割虚线",
+        link: "/components/pages/DashDivider",
+      },
+      {
         text: "边框1",
         link: "/components/pages/BorderBox1",
       },

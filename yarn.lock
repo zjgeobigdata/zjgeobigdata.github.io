@@ -948,10 +948,10 @@ dir-glob@^3.0.1:
   dependencies:
     path-type "^4.0.0"
 
-dz-datav@^2.1.6:
-  version "2.1.6"
-  resolved "https://registry.npmjs.org/dz-datav/-/dz-datav-2.1.6.tgz#5dea7fdfc896f217d5143b311bcf4ff9cab55aaf"
-  integrity sha512-/Sb4xwElCIMqOGaKTPlQ6teomEjJy3uXnNMwCtodV2hGK1xDIMZBif2dM1rWF0oOuz46sKQYpo4P3vxIEOAq3Q==
+dz-datav@^2.1.7:
+  version "2.1.7"
+  resolved "https://registry.npmjs.org/dz-datav/-/dz-datav-2.1.7.tgz#b8e608f509c58faa55fc62e8c6743949dd143669"
+  integrity sha512-sOhiK2aJrfOUPrSlVbeFXci/oyrGeI4jXDYRr5QkXiZFLuVUqNnTocUDIYpuOtWXe1xo8CCGU6Q8D050rKZqcQ==
   dependencies:
     "@vueuse/core" "^9.0.0"
     echarts "5.1.2"

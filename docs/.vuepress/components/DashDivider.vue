@@ -1,0 +1,3 @@
+<template>
+  <dz-dashDivider/>
+</template>
